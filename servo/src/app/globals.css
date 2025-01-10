@@ -1,0 +1,113 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Light */
+@font-face {
+    font-family: "opensans";
+    font-weight: 300;
+    src: url("../../public/fonts/open_sans/OpenSans-Light.woff"), format("woff");
+}
+
+@font-face {
+    font-family: "opensans";
+    font-weight: 300;
+    font-style: italic;
+    src: url("../../public/fonts/open_sans/OpenSans-LightItalic.woff"),
+        format("woff");
+}
+
+/* Regular */
+@font-face {
+    font-family: "opensans";
+    font-weight: 400;
+    src: url("../../public/fonts/open_sans/OpenSans-Regular.woff"),
+        format("woff");
+}
+
+@font-face {
+    font-family: "opensans";
+    font-weight: 400;
+    font-style: italic;
+    src: url("../../public/fonts/open_sans/OpenSans-Italic.woff"),
+        format("woff");
+}
+
+/* Medium */
+@font-face {
+    font-family: "opensans";
+    font-weight: 500;
+    src: url("../../public/fonts/open_sans/OpenSans-Medium.woff"),
+        format("woff");
+}
+
+@font-face {
+    font-family: "opensans";
+    font-weight: 500;
+    font-style: italic;
+    src: url("../../public/fonts/open_sans/OpenSans-MediumItalic.woff"),
+        format("woff");
+}
+
+/* Semi bold */
+@font-face {
+    font-family: "opensans";
+    font-weight: 600;
+    src: url("../../public/fonts/open_sans/OpenSans-SemiBold.woff"),
+        format("woff");
+}
+
+@font-face {
+    font-family: "opensans";
+    font-weight: 600;
+    font-style: italic;
+    src: url("../../public/fonts/open_sans/OpenSans-SemiBoldItalic.woff"),
+        format("woff");
+}
+
+/* Bold */
+@font-face {
+    font-family: "opensans";
+    font-weight: 700;
+    font-style: italic;
+    src: url("../../public/fonts/open_sans/OpenSans-BoldItalic.woff"),
+        format("woff");
+}
+
+/* Extra bold */
+@font-face {
+    font-family: "opensans";
+    font-weight: 800;
+    src: url("../../public/fonts/open_sans/OpenSans-ExtraBold.woff"),
+        format("woff");
+}
+
+@font-face {
+    font-family: "opensans";
+    font-weight: 800;
+    font-style: italic;
+    src: url("../../public/fonts/open_sans/OpenSans-ExtraBoldItalic.woff"),
+        format("woff");
+}
+
+:root {
+    --background: #ffffff;
+    --foreground: #525252;
+    --maincolor: #c834ff;
+    --secondarycolor: #ae2cde;
+    --textcolor1: #ffffff;
+    --textcolor2: #000000;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --background: #0a0a0a;
+        --foreground: #ededed;
+    }
+}
+
+body {
+    color: var(--foreground);
+    background-color: var(--background);
+    font-family: opensans, Arial, Helvetica, sans-serif;
+}
